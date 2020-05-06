@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "0e968472-8266-4a56-b05e-f3622e93de33",
+		"name": "myMuleCode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Country",
+						"value": "China",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"employee\":{\"id\":\"A007\",\"first_name\":\"Jan\",\"last_name\":\"Doe\"}} \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8083/api/createProfile"
+			},
+			"response": []
+		},
+		{
+			"name": "camelCase",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Country",
+						"value": "China",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "Convert into camel case",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": "http://localhost:8083/api/camelCase"
+			},
+			"response": []
+		},
+		{
+			"name": "createNumbers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Country",
+						"value": "China",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "http://localhost:8083/api/createNumbers/10"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
